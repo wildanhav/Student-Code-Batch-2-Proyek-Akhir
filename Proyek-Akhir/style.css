@@ -1,0 +1,559 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*==================================================*/
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/*==================================================*/
+
+body {
+	font-family: verdana, sans-serif;
+	color: #000000;
+
+	background-color: #FBF8F1;
+	letter-spacing: 1px;
+}
+
+.hat {
+	background-color: #FBF8F1;
+
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+
+	height: 80px;
+
+	box-shadow: 0px 1px 50px rgba(10,10,30,0.1);
+
+	box-sizing: border-box;
+}
+
+.hat * {
+	display: inline-block;
+	color: #000000;
+	text-decoration: none;
+}
+
+.hat-content {
+	margin: 25px;
+}
+
+.hat-content h1 {
+	font-size: 30px;
+	font-weight: bold;
+
+	margin-right: 100px;
+}
+
+.label li {
+	margin-right: 70px;
+}
+
+.label a {
+	font-size: 14px;
+
+	padding-bottom: 20px;
+}
+
+.label a:hover {
+	border-bottom: 2px solid #000000;
+}
+
+/*==================================================*/
+
+.content {
+	margin-top: 80px;
+}
+
+.content .hero-image {
+	height: 600px;
+
+	background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url(resources/alexander-schimmeck-6bykmLxy-3Y-unsplash.jpg) right center;
+	background-size: cover;
+
+	box-sizing: border-box;
+	padding-top: 180px;
+	padding-left: 200px;
+}
+
+.hero-image h2 {
+	font: 50px verdana, sans-serif;
+	color: #FBF8F1;
+	font-weight: bold;
+}
+
+.hero-image button {
+	font: inherit;
+	color: #000000;
+	font-weight: bold;
+
+	margin-top: 20px;
+	padding: 16px 30px;
+	border-radius: 12px;
+
+	background-color: #FBF8F1;
+	border: none;
+
+	transition-duration: 0.4s;
+}
+
+.hero-image button:hover {
+	background-color: #000000;
+	color: #FBF8F1;
+}
+
+/*==================================================*/
+
+.intro-produk {
+	box-sizing: border-box;
+
+	padding: 200px 200px 150px;
+}
+
+.intro-produk h2 {
+	font-size: 50px;
+	color: #000000;
+	font-weight: bold;
+}
+
+/*==================================================*/
+
+.produk2 {
+	height: 400px;
+}
+
+.produk2 .produk-tipe {
+	float: left;
+	text-decoration: none;
+}
+
+.produk-tipe {
+	box-sizing: border-box;
+
+	width: 18%;
+	height: 100%;
+
+	padding: 50px 20px;
+	margin: 0% 1%;
+	border-radius: 20px;
+
+	transition-duration: 0.4s;
+}
+
+.produk-tipe:hover {
+	width: 20%;
+	height: 102%;
+
+	margin: -0.25% 0%;
+}
+
+.produk-tipe h2 {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+
+	color: #FBF8F1;
+}
+
+.pro-1 {
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50% ), url(resources/image/disiana-caballero-s4mpAZSvcbE-unsplash.jpg);
+
+	background-size: cover;
+}
+
+.pro-2 {
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50% ), url(resources/image/food-photographer-david-fedulov-DL4nwJFNGOs-unsplash.jpg) center center;
+
+	background-size: cover;
+}
+
+.pro-3 {
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50% ), url(resources/image/engin-akyurt-Y5n8mCpvlZU-unsplash.jpg);
+
+	background-size: cover;
+}
+
+.pro-4 {
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50% ), url(resources/image/timothy-newman-pBwMdofMxtU-unsplash.jpg);
+
+	background-size: cover;
+}
+
+.pro-5 {
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50% ), url(resources/image/mohamed-hassouna-4cLcM8aYDWA-unsplash.jpg);
+
+	background-size: cover;
+}
+/*==================================================*/
+
+.profil {
+	height: 500px;
+	box-sizing: border-box;
+	padding: 100px 250px;
+	margin: 100px 0px;
+	width: 100%;
+
+
+/*==============================================*/
+	/*background-color: #eaeaea;*/
+/*==============================================*/
+}
+
+.profil img, .profil-text {
+	float: left;
+}
+
+.profil img {
+	width: 300px;
+}
+
+.profil .profil-text {
+	font-size: 20px;
+	text-align: center;
+	line-height: 25px;
+
+	margin-top: -70px;
+	margin-left: 100px;
+
+	max-width: 400px;
+}
+
+.profil-text h2 {
+	font-size: 50px;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+.profil-text span {
+	font-weight: bold;
+}
+
+/*==================================================*/
+
+.artikel {
+	height: 600px;
+
+	background-color: #393E46;
+
+	box-sizing: border-box;
+	padding: 5%;
+}
+
+.artikel h2 {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+
+	color: #FFFFFF;
+
+	margin-bottom: 50px;
+}
+
+.artikel-container {
+
+	height: 300px;
+
+	margin: 0px 20% 50px;
+}
+
+.artikel-container a {
+	display: inline-block;
+	box-sizing: border-box;
+
+	width: 31%;
+	height: 100%;
+
+	float: left;
+	text-decoration: none;
+
+	padding: 20px;
+	margin: 0px 1%;
+
+	transition-duration: 0.4s;
+}
+
+.artikel-container a:hover {
+	width: 35%;
+	height: 104%;
+
+	margin: -0.75% -1%;
+}
+
+.artikel-container h2 {
+	color: #000;
+}
+
+.artikel-container a:nth-child(1)  {
+	background: linear-gradient( rgba(255, 255, 255, 0.8) 35%, rgba(0, 0, 0, 0) 35% ), url(resources/artikel/luisa-brimble-2RrBE90w0T8-unsplash.jpg);
+	background-size: cover;
+}
+
+.artikel-container a:nth-child(2)  {
+	background: linear-gradient( rgba(255, 255, 255, 0.8) 35%, rgba(0, 0, 0, 0) 35% ), url(resources/artikel/azzedine-rouichi-YW_5rJvAdKw-unsplash.jpg);
+	background-size: cover;
+}
+
+.artikel-container a:nth-child(3)  {
+	background: linear-gradient( rgba(255, 255, 255, 0.8) 35%, rgba(0, 0, 0, 0) 35% ), url(resources/artikel/dilyara-garifullina-Gx_vsiMRgzk-unsplash.jpg);
+	background-size: cover;
+}
+
+.artikel .tombol {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+
+	padding: 20px 50px;
+
+	background-color: #FFF;
+
+	transition-duration: 0.4s;
+}
+
+.artikel p {
+	text-align: center;
+}
+
+.artikel .tombol:hover {
+	color: #FFF;
+
+	background-color: #000;
+}
+
+/*==================================================*/
+
+.post {
+	height: 400px;
+	width: 100%;
+
+	background-color: #FF2E63;
+	box-sizing: border-box;
+}
+
+.post div {
+	float: left;
+}
+
+.post .post-intro {
+	box-sizing: border-box;
+
+	height: 50%;
+	width: 50%;
+
+	padding: 50px 30px 30px;
+
+	background-color: #FF2E63;
+
+	float: left;
+}
+
+.post .post-intro h2 {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+.icon {
+	margin-top: 40px;
+	margin-left: 25%;
+}
+
+.post-intro a {
+	margin-left: 10%; 
+}
+
+.post-intro a img {
+	width: 8%;
+}
+
+.post .post-kotak {
+	height: 200px;
+	width: 10%;
+
+	box-sizing: border-box;
+
+	background-size: cover;
+}
+
+.post-tipe1 {
+	background: url(resources/posts/alexandra-khudyntseva-hXqbSgOPjSI-unsplash.jpg);
+}
+
+.post-tipe2 {
+	background: url(resources/posts/alex-lvrs--ZvC04d-xLw-unsplash.jpg);
+}
+
+.post-tipe3 {
+	background: url(resources/posts/anh-nguyen-_Uqj5BQb-mw-unsplash.jpg);
+}
+
+.post-tipe4 {
+	background: url(resources/posts/brooke-lark--F_5g8EEHYE-unsplash.jpg);
+}
+
+.post-tipe5 {
+	background: url(resources/posts/brooke-lark-V4MBq8kue3U-unsplash.jpg);
+}
+
+.post-tipe6 {
+	background: url(resources/posts/chad-montano-eeqbbemH9-c-unsplash.jpg);
+}
+
+.post-tipe7 {
+	background: url(resources/posts/chad-montano-MqT0asuoIcU-unsplash.jpg);
+}
+
+.post-tipe8 {
+	background: url(resources/posts/ella-olsson-yb6bm_66Jdk-unsplash.jpg);
+}
+
+.post-tipe9 {
+	background: url(resources/posts/fatima-akram-uU0Anw-8Vsg-unsplash.jpg);
+}
+
+.post-tipe10 {
+	background: url(resources/posts/ikhsan-baihaqi-RwAXb8Hv_sU-unsplash.jpg);
+}
+
+.post-tipe11 {
+	background: url(resources/posts/jona-novak-A6c4cUoFrHg-unsplash.jpg);
+}
+
+.post-tipe12 {
+	background: url(resources/posts/khloe-arledge-ND3edEmzcdQ-unsplash.jpg);
+}
+
+.post-tipe13 {
+	background: url(resources/posts/lily-banse--YHSwy6uqvk-unsplash.jpg);
+}
+
+.post-tipe14 {
+	background: url(resources/posts/nikldn-qp7WA8AV2x0-unsplash.jpg);
+}
+
+.post-tipe15 {
+	background: url(resources/posts/rachel-park-hrlvr2ZlUNk-unsplash.jpg);
+}
+
+/*==================================================*/
+
+.outro {
+	height: 620px;
+
+	background-color: #393E46;
+}
+
+.outro div {
+	float: left;
+
+	margin: 250px 0px 0px;
+	padding: 50px 9% 10%;
+
+	text-align: center;
+}
+
+.outro h2 {
+	color: white;
+	font-weight: bold;
+}
+
+.outro a {
+	text-decoration: none;
+	color: #FF2E63;
+	line-height: 30px;
+}
+
+.outro .outro-tipe1, .outro-tipe2 {
+	box-sizing: border-box;
+	border-right: 2px solid white;
+}
+
+/*==================================================*/
+
+.copyright {
+	height: 30px;
+	background-color: black;
+}
+
+.copyright p {
+	color: white;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: right;
+	margin-right: 10px;
+}
